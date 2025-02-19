@@ -63,7 +63,9 @@ function Dashboard() {
   const totalResults = response.length
 
   // pagination change control
-  const onPageChange = (p) => setPage(p);
+  const onPageChange = (p: number) => setPage(p);
+
+
 
   useEffect(() => {
     const fetchData = async () => {
