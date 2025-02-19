@@ -161,7 +161,7 @@ function Dashboard() {
                     <span className="text-sm">{user.call_count}</span>
                   </TableCell>
                   <TableCell>
-                    <Badge type={user.status}>{user.rating_count}</Badge>
+                    <Badge type={['success', 'warning', 'danger', 'neutral', 'primary'].includes(user.status as string) ? user.status as 'success' | 'warning' | 'danger' | 'neutral' | 'primary' : undefined}>{user.rating_count}</Badge>
                   </TableCell>
                   <TableCell>
                     <span className="text-sm">{new Date(user.date).toLocaleDateString()}</span>

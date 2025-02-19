@@ -111,9 +111,7 @@ function Tables() {
                   <span className="text-sm">$ {user.amount}</span>
                 </TableCell>
                 <TableCell>
-                  <Badge type={mapStatusToBadgeType(user.status)}>
-                    {user.status ?? "Unknown"}
-                  </Badge>
+                  <Badge type={user.status}>{user.status}</Badge>
 
                 </TableCell>
                 <TableCell>

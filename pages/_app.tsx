@@ -1,5 +1,6 @@
 import '../styles/globals.css'
-import 'tailwindcss/tailwind.css';
+// import 'tailwindcss/tailwind.css';
+import '../styles/tailwind.css';  // ✅ Correct import path
 
 import React from 'react'
 import { Windmill } from '@roketid/windmill-react-ui'

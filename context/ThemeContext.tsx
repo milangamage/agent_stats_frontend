@@ -6,7 +6,7 @@ import React, { useState, useEffect, useRef, useLayoutEffect } from 'react'
  * @return {string} previousTheme
  */
 function usePrevious(theme: string) {
-  const ref = useRef<string>()
+  const ref = useRef<string>(theme);  //
   useEffect(() => {
     ref.current = theme
   })
